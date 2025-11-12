@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id(); // Identificador único do comentário
             $table->foreignId('post_id')->constrained()->onDelete('cascade'); // Aponta para a receita a qual o comentário pertence
             $table->foreignId('user_id')->nullable()->constrained()->onDelete('set null'); //Mantém o usuário no banco de dados quando aplicado o soft delete
-            $table->text('conteudo'); // Conteúdo do comentário
+            $table->text('content'); // Conteúdo do comentário
             $table->timestamps(); // Registro de data e hora de alterações
         });
     }

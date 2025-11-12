@@ -14,14 +14,13 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id(); // Identificador único da postagem
             $table->foreignId('user_id')->constrained(); // Aponta para o autor do post
-            $table->string("titulo"); // Nome da Receita
+            $table->string("title"); // Nome da Receita
             $table->string("slug")->unique(); // URL amigável (parte do link da receita)
-            $table->string("imagem_capa")->nullable(); // Aponta para a imagem da capa
-            $table->unsignedSmallInteger("tempo_preparo"); // Tempo de preparo da receita
-            $table->text("ingredientes"); // Ingredientes da receita
-            $table->text("modo_preparo"); // Modo de preparo da receita
+            $table->string("image_cover")->nullable(); // Aponta para a imagem da capa
+            $table->unsignedSmallInteger("preparation_time"); // Tempo de preparo da receita
+            $table->text("ingredients"); // Ingredientes da receita
+            $table->text("preparation_instructions"); // Modo de preparo da receita
             $table->timestamps(); // Registro de data e hora de alterações
-            $table->softDeletes(); // Registro de data de inativação de usuário
         });
     }
 
