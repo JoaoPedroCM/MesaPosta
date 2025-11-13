@@ -4,6 +4,11 @@
     "Password": "Senha",
     "Confirm Password": "Confirme a Senha",
     "Already registered?": "Já é registrado?",
+    "Forgot your password?": "Esqueceu a senha?",
     "Register": "Registrar",
-    "Log in": "Entrar"
+    "Log in": "Entrar",
+    "Remember me": "Lembrar de mim",
+    "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "Esqueceu sua senha? Sem problema. Basta nos informar seu endereço de e-mail e nós enviaremos um link para redefinir a senha, que permitirá que você escolha uma nova.",
+    "Email Password Reset Link": "Enviar link para redefinição de senha",
+    "Reset Password": "Redefinir Senha"
 }
